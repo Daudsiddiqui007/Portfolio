@@ -108,7 +108,7 @@ body {
     }
   }
   .project {
-    background-color: white;
+    background-color: skyblue;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -137,7 +137,8 @@ body {
     font-weight: bold;
   }
   .project a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    border: 2px solid rgb(25, 25, 133);
   }
 
   /* Contact Page Styles */
@@ -145,7 +146,7 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background-color: white;
+    background-color: lightblue;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -223,5 +224,42 @@ body {
       margin: 0 10px;
     }
   }
-  
-  
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .skill {
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    overflow: hidden; /* Prevents any overflow if we have images or content extending */
+  }
+  .skill img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+  .skill p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  /* Hidden text initially */
+  .skill .description {
+    display: none;
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+  }
+
+  /* Show description text on hover */
+  .skill:hover .description {
+    display: block;
+  }
+
+  /* Optional: Add some zoom effect on hover */
+  .skill:hover img {
+    transform: scale(1.1);
+  }
