@@ -90,7 +90,18 @@ body {
     width: 450px;
     height: auto;
   }
+
+  .about-section{
+    padding: 2% 15%;
+  }
   
+  .skills-section{
+    padding: 2% 8%;
+  }
+
+  .contact-container{
+    padding: 5%;
+  }
   /* Responsive Design */
   @media (max-width: 768px) {
     .hero {
